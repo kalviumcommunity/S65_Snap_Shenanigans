@@ -1,4 +1,4 @@
-# Snap Shenanigans:List of qusionable selfie locations
+# Snap Shenanigans : List of Qusionable selfie locations
 
 
 
