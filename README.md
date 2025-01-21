@@ -1,4 +1,4 @@
-# S65_Snap_Shenanigans
+# Snap Shenanigans:List of qusionable selfie locations
 
 
 
