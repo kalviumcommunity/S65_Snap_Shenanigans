@@ -1,0 +1,50 @@
+/* filepath: /c:/Users/jayac/OneDrive/Documents/snap_shenanigans/S65_Snap_Shenanigans/frontend/src/components/AddEntityForm.css */
+.add-entity-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-entity-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-entity-form div {
+    margin-bottom: 15px;
+  }
+  
+  .add-entity-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .add-entity-form input,
+  .add-entity-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-entity-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-entity-form button:hover {
+    background-color: #21a1f1;
+  }

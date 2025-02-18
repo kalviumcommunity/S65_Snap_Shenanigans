@@ -1,0 +1,26 @@
+/* filepath: /c:/Users/jayac/OneDrive/Documents/snap_shenanigans/S65_Snap_Shenanigans/frontend/src/SelfieLocation.css */
+.selfie-location {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .selfie-location-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .selfie-location-name {
+    font-size: 1.5rem;
+    margin: 16px 0 8px;
+  }
+  
+  .selfie-location-description {
+    font-size: 1rem;
+    color: #555;
+  }

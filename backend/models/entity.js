@@ -1,12 +1,10 @@
 const mongoose = require('mongoose');
 
 const entitySchema = new mongoose.Schema({
-  name: String,
-  description: String,
-  createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+  name: { type: String, required: true },
+  description: { type: String, required: true },
+  imageUrl: { type: String, required: true },
+  created_by: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }
 });
 
-const Entity = mongoose.model('Entity', entitySchema);
-
-module.exports = Entity;
+module.exports = mongoose.model('Entity', entitySchema);
