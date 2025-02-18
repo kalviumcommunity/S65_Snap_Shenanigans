@@ -1,4 +1,3 @@
-// filepath: /c:/Users/jayac/OneDrive/Documents/snap_shenanigans/S65_Snap_Shenanigans/frontend/src/pages/Features.jsx
 import React from 'react';
 
 function Features() {

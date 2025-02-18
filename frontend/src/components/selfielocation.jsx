@@ -1,9 +1,8 @@
-// filepath: /c:/Users/jayac/OneDrive/Documents/snap_shenanigans/S65_Snap_Shenanigans/frontend/src/components/selfielocation.jsx
 import React from 'react';
 import SelfieLocation from './selfielocation';
 
 function SelfieLocations({ locations, fetchLocations }) {
-  console.log('Locations in SelfieLocations:', locations); // Debug log
+  console.log('Locations in SelfieLocations:', locations);
 
   if (!locations || locations.length === 0) {
     return <p>No selfie locations available.</p>;

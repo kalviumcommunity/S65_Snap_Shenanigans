@@ -10,14 +10,14 @@ function AddEntityForm({ fetchLocations }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newEntity = { name, description, imageUrl };
-    console.log('Submitting new entity:', newEntity); // Debug log
+    console.log('Submitting new entity:', newEntity);
     axios.post('http://localhost:3000/api/entity', newEntity)
       .then(response => {
-        console.log('Entity added successfully:', response.data); // Debug log
+        console.log('Entity added successfully:', response.data);
         setName('');
         setDescription('');
         setImageUrl('');
-        fetchLocations(); // Fetch the latest locations after adding a new entity
+        fetchLocations();
       })
       .catch(error => {
         console.error('Error adding entity:', error);

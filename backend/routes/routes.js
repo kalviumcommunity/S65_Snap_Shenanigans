@@ -3,13 +3,11 @@ const { body, validationResult } = require('express-validator');
 const router = express.Router();
 const Entity = require('../models/entity');
 
-
 router.post('/entity', [
   body('name').notEmpty().withMessage('Name is required'),
   body('description').notEmpty().withMessage('Description is required'),
   body('imageUrl').isURL().withMessage('Image URL must be a valid URL'),
   body('created_by').notEmpty().withMessage('Created by is required')
-
 ], async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -26,7 +24,6 @@ router.post('/entity', [
   }
 });
 
-// Read all entities
 router.get('/entity', async (req, res) => {
   try {
     const entities = await Entity.find();
@@ -37,7 +34,6 @@ router.get('/entity', async (req, res) => {
   }
 });
 
-// Read one entity by ID
 router.get('/entity/:id', async (req, res) => {
   try {
     const result = await Entity.findById(req.params.id);
@@ -48,7 +44,6 @@ router.get('/entity/:id', async (req, res) => {
   }
 });
 
-// Update
 router.put('/entity/:id', [
   body('name').notEmpty().withMessage('Name is required'),
   body('description').notEmpty().withMessage('Description is required'),
@@ -68,7 +63,6 @@ router.put('/entity/:id', [
   }
 });
 
-// Delete
 router.delete('/entity/:id', async (req, res) => {
   try {
     const result = await Entity.findByIdAndDelete(req.params.id);

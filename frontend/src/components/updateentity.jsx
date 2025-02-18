@@ -25,11 +25,11 @@ function UpdateEntityForm({ fetchLocations }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const updatedEntity = { name, description, imageUrl };
-    console.log('Updating entity:', updatedEntity); // Debug log
+    console.log('Updating entity:', updatedEntity);
     axios.put(`http://localhost:3000/api/entity/${id}`, updatedEntity)
       .then(response => {
-        console.log('Entity updated successfully:', response.data); // Debug log
-        fetchLocations(); // Fetch the latest locations after updating an entity
+        console.log('Entity updated successfully:', response.data);
+        fetchLocations();
       })
       .catch(error => {
         console.error('Error updating entity:', error);
